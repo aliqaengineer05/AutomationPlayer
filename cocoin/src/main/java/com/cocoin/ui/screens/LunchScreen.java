@@ -16,8 +16,4 @@ public class LunchScreen extends TesstBase{
 	  wait = new WebDriverWait(driver, 5000);
 	  wait.until(ExpectedConditions.elementToBeClickable(By.className("android.widget.RelativeLayout")));
 	}
-	
-	
-	
-	
 }

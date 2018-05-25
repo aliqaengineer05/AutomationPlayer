@@ -19,7 +19,7 @@ public class TC004_VerifyAddedExpense extends TesstBase {
 	@Test
 	public void verifyLaunchApp() throws Exception {
 		
-			//log.info("=======Starting TC001_LunachApp test========");
+		//log.info("=======Starting TC001_LunachApp test========");
 		app = new LunchScreen();
 		app.LunchApp();
 		swipeHorizentally = new Swipe();
@@ -33,8 +33,6 @@ public class TC004_VerifyAddedExpense extends TesstBase {
 		Swipe.swipeHorizontally(driver, 0.9,0.01,0.5,200);
 		login = new Login(driver);
 		login.Password();
-		Expense = new AddExpense(driver);
-		Expense.AddExpenseCategory();
 		verifyExpense = new VerifyAddedExpense(driver);
 		verifyExpense.VerifyExpense();
 	

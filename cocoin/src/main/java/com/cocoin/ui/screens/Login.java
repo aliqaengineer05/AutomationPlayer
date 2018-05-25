@@ -4,28 +4,26 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.cocoin.core.Driverr;
+import com.cocoin.core.Driver;
 
 import io.appium.java_client.android.AndroidDriver;
 
-public class Login extends Driverr {
+public class Login extends Driver {
 	
-	// Click On Keypad to press Button 1 
-	    @CacheLookup
-		@FindBy(xpath="//android.widget.FrameLayout[@index='0']")
+	// Click On Keypad to press Button 1
+		@FindBy(xpath="//android.widget.TextView[@text='1']")
 		WebElement Number1;
 		
 	// Click On Keypad to press Button 2
-	    @CacheLookup
-		@FindBy(xpath="//android.widget.FrameLayout[@index='1']")
+	    @FindBy(xpath="//android.widget.TextView[@text='1']")
 		WebElement Number2;
 
 	// Click On Keypad to press Button 3   
-		@FindBy(xpath="//android.widget.FrameLayout[@index='2']")
+	    @FindBy(xpath="//android.widget.TextView[@text='1']")
 		WebElement Number3;
 		
 	// Click On Keypad to press Button 4   
-		@FindBy(xpath="//android.widget.FrameLayout[@index='3']")
+	    @FindBy(xpath="//android.widget.TextView[@text='1']")
 		WebElement Number4;	
 		
 	// Click On Submit Button  
@@ -36,19 +34,19 @@ public class Login extends Driverr {
 //** Re-Confirm the Password To match the Both password 
 		
 	// Click On Keypad to press Button 1   
-		@FindBy(xpath="//android.widget.FrameLayout[@index='0']")
+		@FindBy(xpath="//android.widget.TextView[@text='1']")
 		WebElement Number01;
 			
 	// Click On Keypad to press Button 2   
-		@FindBy(xpath="//android.widget.FrameLayout[@index='1']")
+		@FindBy(xpath="//android.widget.TextView[@text='1']")
 		WebElement Number02;
 
 	// Click On Keypad to press Button 3   
-		@FindBy(xpath="//android.widget.FrameLayout[@index='2']")
+		@FindBy(xpath="//android.widget.TextView[@text='1']")
 		WebElement Number03;
 			
 	// Click On Keypad to press Button 4   
-		@FindBy(xpath="//android.widget.FrameLayout[@index='3']")
+		@FindBy(xpath="//android.widget.TextView[@text='1']")
 		WebElement Number04;	
 			
 	// Click On Submit Button  
@@ -68,13 +66,11 @@ public class Login extends Driverr {
 			this.Number2.click();
 			this.Number3.click();
 			this.Number4.click();
-			this.submitButton.click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			this.Number01.click();
 			this.Number02.click();
 			this.Number03.click();
 			this.Number04.click();
-			this.ConfirmButton.click();
 		}
 			
 }

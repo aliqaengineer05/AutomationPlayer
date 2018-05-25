@@ -2,7 +2,7 @@ package com.cocoin.util;
 
 import org.openqa.selenium.Dimension;
 import com.cocoin.core.TesstBase;
-import com.cocoin.core.Driverr;
+import com.cocoin.core.Driver;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;

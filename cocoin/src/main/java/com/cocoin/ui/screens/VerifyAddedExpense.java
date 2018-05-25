@@ -14,16 +14,16 @@ public class VerifyAddedExpense extends TesstBase {
 			@FindBy(id="com.nightonke.cocoin:id/content_hamburger")
 			WebElement Hamburger;
 	// Click On Click on Number01		
-			@FindBy(id="com.nightonke.cocoin:id/textview")
+			@FindBy(xpath="//android.widget.TextView[@text='1']")
 			WebElement Number01;
 	// Click On Click on Number02	
-			@FindBy(id="com.nightonke.cocoin:id/textview")
+			@FindBy(xpath="//android.widget.TextView[@text='1']")
 			WebElement Number02;
 	// Click On Click on Number03	
-			@FindBy(id="com.nightonke.cocoin:id/textview")
+			@FindBy(xpath="//android.widget.TextView[@text='1']")
 			WebElement Number03;
 	// Click On Click on Number04	
-			@FindBy(id="com.nightonke.cocoin:id/textviewr")
+			@FindBy(xpath="//android.widget.TextView[@text='1']")
 			WebElement Number04;
 	// Click On Click on YESTERDAY	
 			@FindBy(xpath="//android.widget.TextView[@text='YESTERDAY']")
